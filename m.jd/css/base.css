@@ -1,0 +1,130 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    -webkit-tap-highlight-color: transparent;/*清除webkit内核浏览器点击默认的高亮效果*/
+
+    box-sizing: border-box; /*以border开始计算宽度*/
+}
+
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif; /*第二个是手机的一个默认字体,如果没有微软雅黑就选第二个*/
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none; /*清除默认选中框效果*/
+    -webkit-appearance: none;/*清除浏览器默认的样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+/*精灵图*/
+[class ^= "icon-"]{
+    background: url("../images/jd-sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+
+/*设置所用语义标签样式*/
+em,i{
+    font-style: normal;
+}
+
+/*布局设置*/
+.graphic-separation{
+    background-color: #fff;
+    position: relative;
+    font-family: PingFang-Medium,PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+    font-size: 0;
+}
+.graphic-col02-sm, .graphic-col02-bg{
+    width: 50%;
+    position: relative;
+    height: 100%;
+    float: left;
+}
+.graphic-col04-bg, .graphic-col04-sm{
+    width: 25%;
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+/*伪元素设置盒子边框*/
+.bdr-right::after{
+    content: '';
+    height: 100%;
+    width: 0;
+    border-right: 1px solid #f0f0f0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bdr-bottom::after{
+    content: '';
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bdr-top::before{
+    content: '';
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #f0f0f0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bdr-top:after{
+    content: '';
+    height: 0;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*内容呈现*/
+.real-show{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 7px 7px 5px;
+}
+
+.graphic-col02-sm .real-show, .graphic-col04-bg .real-show{
+    /*padding: 7px 7px 5px;*/
+}

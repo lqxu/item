@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="jasonx">
+    <title>IME爱我</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jump.js"></script>
+    <style>
+        #wrap{
+            position: relative;
+            padding: 0;
+        }
+        #wrap li{
+            float: left;
+            list-style: none;
+        }
+        #wrap .boxContent{
+            width: 224px;
+            margin-right: 17.5px;
+            margin-bottom: 25px;
+            border: 1px solid #DEDFE0;
+            border-bottom: 2px solid #DEDFE0;
+        }
+        #wrap li:nth-child(5) .boxContent{
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<!--导航部分-->
+    <div id="header">
+        <div class="h-nav">
+            <div class="w" style="height: 64px;">
+                <!--左边-->
+                <div class="h-n-l">
+                    <a class="h-n-logo left" href="#"><img src="img/logo.png" alt=""></a>
+                    <div class="h-n-l-fl left">
+                        分类
+                        <img src="img/gou.png"/>
+                    </div>
+                    <!--/*搜索*/-->
+                    <div id="h-n-ss" class="left">
+                        <input type="text" placeholder="搜索感兴趣的内容" class="left">
+                        <img class="right" src="img/su.png"/>
+                    </div>
+                </div>
+                <!--右边-->
+                <div class="h-n-r right">
+                    <div class="h-n-phone right e">
+                        <span class="phone-sp1 left"></span>
+                        <a href="#" class="left">手机版</a>
+                        <span class="phone-sp2 right"></span>
+                    </div>
+                    <div class="line-c right e"></div>
+                    <a id="login" class="right e" href="#">登录</a>
+                    <div class="line-c right e"></div>
+                    <a class="right zc" href="register/register.html" style="line-height: 28px;">注册</a>
+                    <div class="line-c right e"></div>
+                    <a class="right e" href="life/life.html">服务之家<span class="fw">new</span></a>
+                    <div class="line-c right e"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--上面部分-->
+    <div id="top">
+        <div class="w">
+            <!--轮播图-->
+            <div id="top-l" class="top-l left">
+                <div id="sort">
+                    <img class="swapImg" src="img/01.jpeg" alt="">
+                    <img class="swapImg" src="img/02.jpeg" alt="">
+                    <img class="swapImg" src="img/03.jpeg" alt="">
+                    <img class="swapImg" src="img/04.jpeg" alt="">
+                    <img class="swapImg" src="img/05.jpeg" alt="">
+                </div>
+                <a class="btnLeft"></a>
+                <a class="btnRight"></a>
+                <div id="spans"></div>
+            </div>
+            <!--/*&lt;!上面右边&gt;*/-->
+            <div class="top-r right">
+                <div class="top-r-t">
+                    <h3>社区热点</h3>
+                    <div class="top-r-t-c">
+                        <div><a href="#" style="padding-left:0 !important;">冬天</a></div>
+                        <div><a href="#">把生活过成一首诗</a></div>
+                        <div> <a href="#">早餐</a></div>
+                        <div><a href="#">记下时间走过的路</a></div>
+                        <div><a href="#" style="padding-left:0 !important;">穿搭</a></div>
+                        <div><a href="#">家居</a></div>
+                        <div><a href="#">原创</a></div>
+                    </div>
+                    <div class="jump top-r-t-b">
+                        <a href="#">『人气连衣裙精选』 大合集  </a>
+                        <span>精选</span>
+                    </div>
+                    <div class="jump top-r-t-f">
+                        <span>收图小助手:&nbsp;</span>
+                        <a href="#">堆糖收集工具</a>
+                    </div>
+                </div>
+                <div class="top-r-b">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--内容部分-->
+    <div id="content">
+        <!--专辑精选-->
+        <div class="w zjjx">
+            <div >
+                <div class="line"></div>
+                <div class="zjjx_t">
+                    <h2 class="left" style="font-size: 18px;color: gray;">专 辑 精 选</h2>
+                    <a class="right" href="#"> 往期回顾 ></a>
+                </div>
+                <div style="height: 328px;">
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div style="width: 224px;border: 1px solid #DEDFE0;">
+                            <div class="content_div">
+                                <img src="img/zjjx01.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">换上帆布鞋去踏青吧！</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>85张图片 · 1489人收藏</p>
+                                    <p style="margin-bottom: 9px;">by <a href="#" style="color: #666666;">cold</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zjjx_b1"></div>
+                        <div class="zjjx_b2"></div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div style="width: 224px;border: 1px solid #DEDFE0;">
+                            <div class="content_div">
+                                <img src="img/zjjx02.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">sugar 胡小糖</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>25张图片 · 1009人收藏</p>
+                                    <p style="margin-bottom: 9px;">by <a href="#" style="color: #666666;">七月火星人</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zjjx_b1"></div>
+                        <div class="zjjx_b2"></div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div style="width: 224px;border: 1px solid #DEDFE0;">
+                            <div class="content_div">
+                                <img src="img/zjjx03.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">跟上春天的脚步！</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>105张图片 · 988人收藏</p>
+                                    <p style="margin-bottom: 9px;">by <a href="#" style="color: #666666;">baozi</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zjjx_b1"></div>
+                        <div class="zjjx_b2"></div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div style="width: 224px;border: 1px solid #DEDFE0;">
+                            <div class="content_div">
+                                <img src="img/zjjx04.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">掐指一算，又到了该买本子的季节</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>35张图片 · 1108人收藏</p>
+                                    <p style="margin-bottom: 9px;">by <a href="#" style="color: #666666;">夏音</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zjjx_b1"></div>
+                        <div class="zjjx_b2"></div>
+                    </div>
+                    <div class="left">
+                        <div style="width: 224px;border: 1px solid #DEDFE0;">
+                            <div class="content_div">
+                                <img src="img/zjjx05.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">我们是时候要穿的薄一些</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>115张图片 · 1886人收藏</p>
+                                    <p style="margin-bottom: 9px;">by <a href="#" style="color: #666666;">熊丸子</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zjjx_b1"></div>
+                        <div class="zjjx_b2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--单品推荐-->
+        <div class="w dptj">
+            <div >
+                <div class="line"></div>
+                <div class="zjjx_t">
+                    <h2 class="left" style="font-size: 18px;color: gray;">单 品 推 荐</h2>
+                    <div class="right dptj_t">
+                        <span style="color: #666666;">良品购：</span>
+                        <a href="#">全部</a>
+                        <a href="#">上衣</a>
+                        <a href="#">裙裤</a>
+                        <a href="#">配饰</a>
+                        <a href="#">鞋子</a>
+                        <a href="#">包袋</a>
+                        <a href="#" style="border: none;">日杂</a>
+                    </div>
+                </div>
+                <div style="height: 386px;">
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div class="drtj_div">
+                            <div class="content_div">
+                                <img src="img/dptj01.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">连衣裙</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>189097个人在逛</p>
+                                    <a href="#">良品购</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div class="drtj_div">
+                            <div class="content_div">
+                                <img src="img/dptj02.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">短裙</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>167307个人在逛</p>
+                                    <a href="#">良品购</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div class="drtj_div">
+                            <div class="content_div">
+                                <img src="img/dptj03.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">水桶包</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>200150个人在逛</p>
+                                    <a href="#">良品购</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;">
+                        <div class="drtj_div">
+                            <div class="content_div">
+                                <img src="img/dptj04.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">耳饰</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>1208337个人在逛</p>
+                                    <a href="#">良品购</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="drtj_div">
+                            <div class="content_div">
+                                <img src="img/dptj05.jpeg" alt="">
+                                <div class="content_div_d">
+                                    <a href="#">水杯</a>
+                                </div>
+                                <div class="content_div_d2">
+                                    <p>1623497个人在逛</p>
+                                    <a href="#">良品购</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--&lt;!&ndash;达人推荐&ndash;&gt;-->
+        <div class="w drtj">
+            <div >
+                <div class="line"></div>
+                <div class="zjjx_t">
+                    <h2 class="left" style="font-size: 18px;color: gray;">达 人 推 荐</h2>
+                    <a class="right" href="#"> 推荐更多 ></a>
+                </div>
+                <div style="height: 256px;">
+                    <div class="left" style="margin-right: 17.5px;position: relative;">
+                        <div class="drtj_div">
+                            <div class="drtj_t">
+                                <img src="img/drtj01.jpeg" alt="" width="224" height="113">
+                            </div>
+                            <div class='drtj_c'>
+                                <div class="drtj_cc drtj_cc1"></div>
+                                <img src="img/V.png" alt="">
+                            </div>
+                            <div class="drtj_b">
+                                <a href="#">铁皮猫儿</a>
+                                <p style="height: 16px;"> <span class="drtj_b_sp1 left"></span> <span class="drtj_b_sp2 left">9911</span></p>
+                                <p class="drtj_b_p"> 擅长领域: <b>园 艺 </b> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;position: relative;">
+                        <div class="drtj_div">
+                            <div class="drtj_t">
+                                <img src="img/drtj02.jpeg" alt="" width="224" height="113">
+                            </div>
+                            <div class='drtj_c'>
+                                <div class="drtj_cc drtj_cc2 "></div>
+                                <img src="img/V.png" alt="">
+                            </div>
+                            <div class="drtj_b">
+                                <a href="#">NanaFang</a>
+                                <p style="height: 16px;"> <span class="drtj_b_sp1 left"></span> <span class="drtj_b_sp2 left">6701</span></p>
+                                <p class="drtj_b_p"> 擅长领域: <b>摄 影 </b> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;position: relative;">
+                        <div class="drtj_div">
+                            <div class="drtj_t">
+                                <img src="img/drtj03.jpeg" alt="" width="224" height="113">
+                            </div>
+                            <div class='drtj_c'>
+                                <div class="drtj_cc drtj_cc3 "></div>
+                                <img src="img/V.png" alt="">
+                            </div>
+                            <div class="drtj_b">
+                                <a href="#">兔纸鱼</a>
+                                <p style="height: 16px;"> <span class="drtj_b_sp1 left"></span> <span class="drtj_b_sp2 left">9002</span></p>
+                                <p class="drtj_b_p"> 擅长领域: <b>Q 版</b> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left" style="margin-right: 17.5px;position: relative;">
+                        <div class="drtj_div">
+                            <div class="drtj_t">
+                                <img src="img/drtj04.jpeg" alt="" width="224" height="113">
+                            </div>
+                            <div class='drtj_c'>
+                                <div class="drtj_cc drtj_cc4"></div>
+                                <img src="img/V.png" alt="">
+                            </div>
+                            <div class="drtj_b">
+                                <a href="#">小安炖硬汉</a>
+                                <p style="height: 16px;"> <span class="drtj_b_sp1 left"></span> <span class="drtj_b_sp2 left">771</span></p>
+                                <p class="drtj_b_p"> 擅长领域: <b>插 画 </b> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left" style="position: relative;">
+                        <div class="drtj_div">
+                            <div class="drtj_t">
+                                <img src="img/drtj05.jpeg" alt="" width="224" height="113">
+                            </div>
+                            <div class='drtj_c'>
+                                <div class="drtj_cc drtj_cc5"></div>
+                                <img src="img/V.png" alt="">
+                            </div>
+                            <div class="drtj_b">
+                                <a href="#">心途2017</a>
+                                <p style="height: 16px;"> <span class="drtj_b_sp1 left"></span> <span class="drtj_b_sp2 left">12068</span></p>
+                                <p class="drtj_b_p"> 擅长领域: <b>美 食 </b> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--&lt;!&ndash;大家正在逛   瀑布流&ndash;&gt;-->
+        <div class="w drtj">
+            <div >
+                <div class="line"></div>
+                <div class="zjjx_t">
+                    <h2 class="left" style="font-size: 18px;color: gray;">大 家 正 在 逛</h2>
+                </div>
+                <div id="container">
+                    <ul id="wrap">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--底部部分-->
+    <div id="footer">
+        <div class="w">
+            <div style="height: 160px;">
+                <div class="footer_div left">
+                    <div class="footer_div_t">关于我们</div>
+                    <div class="footer_div_b">
+                        <a class="oh" href="#">关于我们</a>
+                        <a href="#">帮组中心</a>
+                        <a class="oh" href="#">加入我们</a>
+                        <a href="#">iem收集工具</a>
+                        <a class="oh" href="#">联系我们</a>
+                        <a href="#">标签集</a>
+                        <a class="oh" href="#">商务合作</a>
+                        <a href="#">免责声明</a>
+                    </div>
+                </div>
+                <div class="footer_div left">
+                    <div class="footer_div_t">手机应用</div>
+                    <div class="footer_div_b">
+                        <a class="oh" href="#">iem客户端</a>
+                        <a href="#">爱疯了壁纸</a>
+                        <a class="oh" href="#">iem良品购</a>
+                    </div>
+                </div>
+                <div class="footer_div left">
+                    <div class="footer_div_d">
+                        <img src="img/ewm.png" alt="" width="88" height="88">
+                    </div>
+                    <p>扫描二维码</p>
+                    <p>下载iem手机客户端</p>
+                </div>
+                <div class="footer_div left">
+                    <div class="footer_div_t">关注我们</div>
+                    <div class="footer_div_b">
+                        <a class="oh" href="#">新浪微博</a>
+                        <a href="#">微信</a>
+                    </div>
+                </div>
+                <div class="footer_div left">
+                    <div class="footer_div_t">友情链接</div>
+                    <div class="footer_div_b">
+                        <a class="oh" href="#">爱物网</a>
+                        <a href="#">东方女性网</a>
+                        <a class="oh" href="#">肉丁网</a>
+                        <a href="#">iem时尚风</a>
+                        <a class="oh" href="#">美食美酒网</a>
+                        <a href="#">携程攻略</a>
+                        <a class="oh" href="#">网络招聘</a>
+                        <a href="#">更多...</a>
+                    </div>
+                </div>
+            </div>
+            <!--&lt;!&ndash;最下面一行&ndash;&gt;-->
+            <div class="footer_b">
+                <div>
+                    <span>©2017 duitang.com 版权所有。沪ICP备10038086号-3</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!--返回顶部-->
+    <div id="db">
+        <a class="db_a1" href="#"></a>
+        <a class="db_a2" href="#"></a>
+        <a class="db_a3" href="#"></a>
+    </div>
+<!--登录界面-->
+    <div class="all" id="all">
+    <div class="top"></div>
+    <div class="login_content">
+        <div class="login_content_t">登录 <a id="login_x" href="#"></a> </div>
+        <div class="login_content_c">
+            <div class="login_content_c_l">
+                <div><input type="text" placeholder="用户名/邮件"></div>
+                <div><input type="text" placeholder="密码"></div>
+                <div class="pass">
+                    <input type="checkbox" id="check" value="checked"><label for="check">记住我</label>
+                    <a href="#">忘记密码 ?</a>
+                </div>
+                <div class="dl">登录</div>
+            </div>
+            <div class="login_content_c_r">
+                <div class="wx"><img src="img/wx.png" alt=""></div>
+                <div class="wx_b">扫一扫下载手机客户端浏览更快</div>
+            </div>
+        </div>
+        <div class="login_content_b">
+            <a href="#">还没有账号？立即注册</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    //01 先创建出需要显示的20个li
+    //在li上加一个div用来承载内容
+    var htmls = '';
+    for (var i=1; i<30; i++){
+        i = i > 9 ? i : "0" + i;
+        htmls += '<li><div class="boxContent"><img src="images/'+i+'.jpg" width="100%"></div></li>';
+    }
+    $('#wrap').append(htmls);
+
+    //02 再对这20个li进行排列
+    function sort(){
+        //a.获取当前列数
+        var windowWidth = $(window).width();
+        var listWidth = $('#wrap li').width();
+        //document.querySelectorAll('#wrap li')[0].offsetWidth;
+        var numCols = 5;
+
+        //b.对每一个li进行位置计算(绝对定位),所以需要遍历出每一个li
+        var colHeight = [];
+        for (var i=0; i<$('#wrap li').length; i++){
+            if (i < numCols){
+                //进入这个判断条件的li是显示在页面第一行的li
+                //这里要做的操作有这些
+                //01 记录下这些li的高度，其实就是当前列的高度，目的是给第二行第一个li放置的位置提供参考。
+                //02 让每次第一行的定位都取默认值
+                colHeight[i] = $('#wrap li')[i].offsetHeight;
+                $('#wrap li')[i].style.position = 'static';
+            }else {
+                //console.log(colHeight);
+                //找到最小高度列，并向该列中放置下一个的li
+                //Math.min()用于查找几个数字中的最小值，apply()可以查找数组中的最小值
+                var minHeight = Math.min.apply({},colHeight);
+                //最小高度列所在index
+                var index = searchIndex(colHeight, minHeight);
+                //找到最小高度所对应的索引值以后，这时候可以对下一个li进行定位
+                //01 设置position
+                $('#wrap li')[i].style.position = 'absolute';
+                //02 设置top left
+                $('#wrap li')[i].style.top = minHeight + 'px';
+                $('#wrap li')[i].style.left = index * listWidth + 'px';
+
+                //每当设置完下一个li的位置后，该列的高度会因为这个设置而发生改变，此时需要更新每列高度的数组
+                //改变后的列高 = 之前列高 + 新增li的高度
+                colHeight[index] += $('#wrap li')[i].offsetHeight;
+            }
+        }
+        var maxHeight = Math.max.apply({},colHeight);
+        $('#container').css('height',maxHeight);
+    }
+
+    //封装函数 为了找值value所对应的index值
+    function searchIndex(array,value){
+        for (var index in array){
+            if (array[index] == value){
+                return index;
+            }
+        }
+    }
+
+    $(window).on('load',function () {
+        sort();
+    });
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

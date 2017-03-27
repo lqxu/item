@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="jasonx">
+    <title>京东</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <!--大盒子-->
+    <div class="jd-layout">
+        <!--头部搜索-->
+        <header class="jd-header">
+            <div class="jd-header-box">
+                <a href="#" class="icon-logo"></a>
+                <form action="">
+                    <span class="icon-search"></span>
+                    <!--定义能调出搜索按钮的type类型-->
+                    <input type="search" placeholder="搜索京东商品/店铺"/>
+                </form>
+                <a href="" class="login">登录</a>
+            </div>
+        </header>
+
+        <!--轮播图-->
+        <div class="jd-banner">
+            <ul>
+                <li><img src="images/scroll_01.jpg" alt=""></li>
+                <li><img src="images/scroll_02.jpg" alt=""></li>
+                <li><img src="images/scroll_03.jpg" alt=""></li>
+                <li><img src="images/scroll_04.jpg" alt=""></li>
+                <li><img src="images/scroll_05.jpg" alt=""></li>
+                <li><img src="images/scroll_06.jpg" alt=""></li>
+                <li><img src="images/scroll_07.jpg" alt=""></li>
+                <li><img src="images/scroll_08.jpg" alt=""></li>
+            </ul>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!--导航栏-->
+        <div class="jd-nav-bg">
+            <nav class="jd-nav">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_01.png" alt="">
+                            <p>京东超市</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_02.png" alt="">
+                            <p>全球购</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_03.png" alt="">
+                            <p>服装城</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_04.png" alt="">
+                            <p>京东生鲜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_05.png" alt="">
+                            <p>京东到家</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_06.png" alt="">
+                            <p>充值中心</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_07.png" alt="">
+                            <p>惠赚钱</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_08.png" alt="">
+                            <p>领券</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_09.png" alt="">
+                            <p>物流查询</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/nav_10.png" alt="">
+                            <p>我的关注</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="jd-express-news">
+                <a href="" class="jd-news-tit">
+                    <img src="images/jd-news-tit.png" alt="">
+                </a>
+                <div class="scroll-news">
+                    <ul class="news-list">
+                        <li class="news-item">
+                            <a href="">
+                                <span class="red">抢</span>
+                                京东影音节 500元神券抢先领！
+                            </a>
+                        </li>
+                        <li class="news-item">
+                            <a href="">
+                                <span class="red">抢</span>
+                                京东生鲜奶油草莓38.8元2斤！
+                            </a>
+                        </li>
+                        <li class="news-item">
+                            <a href="">
+                                <span class="red">荐</span>
+                                蝴蝶节全球尖货，满199减100！
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="jd-news-more">
+                    <i class="line"></i>
+                    更多
+                </a>
+            </div>
+        </div>
+        <!--商品区-->
+        <main class="jd-product">
+            <!--秒杀区-->
+            <div class="floor">
+                <!--秒杀标题-->
+                <div id="second_kill_title">
+                    <a class="seckill-left-link" href="">
+                        <img src="images/jd_second_kill.png" alt="">
+                        <strong><em>16</em>点场</strong>
+                        <div id="second_kill_time">
+                            <div class="seckill-time">
+                                <span>0</span><span>0</span>
+                            </div><span class="seckill-time-separator">:</span>
+                            <div class="seckill-time">
+                                <span>0</span><span>0</span>
+                            </div><span class="seckill-time-separator">:</span>
+                            <div class="seckill-time">
+                                <span>0</span><span>0</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="seckill-more-link" href="">
+                        玩心跳意犹未尽
+                        <i class="seckill-more-icon"></i>
+                    </a>
+                </div>
+                <!--秒杀详情-->
+                <div id="second_kill_detail" class="bdr-bottom">
+                    <ul class="seckill-new-list">
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_01.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_02.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_03.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_04.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_05.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_06.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_13.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_07.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_08.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_09.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_11.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                        <li class="seckill-new-item">
+                            <div class="seckill-new-item-img bdr-right">
+                                <a href="">
+                                    <img src="images/seckill_12.jpg" alt="" class="seckill-photo opa1">
+                                    <div class="seckill-tip">囤货</div>
+                                </a>
+                            </div>
+                            <div class="seckill-new-item-price">
+                                <span class="seckill-new-price">
+                                    <em>￥</em>
+                                    1249
+                                </span>
+                                <span class="seckill-original-price">
+                                    <em>￥</em>
+                                    1349
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--排行榜&&闪购-->
+            <div class="floor">
+                <div class="floor-container">
+                    <div class="graphic-separation graphic-col02-sm bdr-right">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">排行榜</strong>
+                                    <p class="graphic-small">好货大赏</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_01.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col02-sm">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">闪购</strong>
+                                    <p class="graphic-small">品牌限时特卖</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_03.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--爱生活-->
+            <div class="floor">
+                <div class="floor-title floor-title-img">
+                    <img src="images/floor-tit.png" alt="">
+                    <span>
+                        <img src="images/love_life.jpg" alt="">
+                    </span>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-sm bdr-right">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">玩3C</strong>
+                                    <p class="graphic-small">诺基亚6现货</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_04.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col02-sm">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">京东家电</strong>
+                                    <p class="graphic-small">满300减30</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_05.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-sm bdr-right">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">京东超市</strong>
+                                    <p class="graphic-small">买二免一</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_06.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col02-sm">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">爱家</strong>
+                                    <p class="graphic-small">自营家具88折</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_07.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container">
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">爱宝宝</strong>
+                                    <p class="graphic-small">每满99减30</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_05.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">爱美丽</strong>
+                                    <p class="graphic-small">纪梵希小粉皮</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_06.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">爱吃</strong>
+                                    <p class="graphic-small">满99减50</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_07.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">爱逛</strong>
+                                    <p class="graphic-small">运动299减100</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_08.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--享品质-->
+            <div class="floor">
+                <div class="floor-title floor-title-img">
+                    <img src="images/floor-tit.png" alt="" >
+                    <span>
+                        <img src="images/enjoy_quality.jpg" alt="">
+                    </span>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-sm bdr-right">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">全球尖货</strong>
+                                    <p class="graphic-small">HiPP奶粉限量抢</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_08.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col02-sm">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">京东精选</strong>
+                                    <p class="graphic-small">热销清洁直降</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_09.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-sm bdr-right">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">京东体育</strong>
+                                    <p class="graphic-small">骑行馆</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_10.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col02-sm">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">奢品大牌</strong>
+                                    <p class="graphic-small">跨店满299减100</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_11.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container">
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">环球时尚</strong>
+                                    <p class="graphic-small">抢50元券</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_01.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">珠宝首饰</strong>
+                                    <p class="graphic-small">白色情人节</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_02.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">设计师</strong>
+                                    <p class="graphic-small">潮流设计精选</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_03.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">达人精选</strong>
+                                    <p class="graphic-small">早春时髦穿搭</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_04.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--购特色-->
+            <div class="floor">
+                <div class="floor-title floor-title-img">
+                    <img src="images/floor-tit.png" alt="">
+                    <span>
+                        <img src="images/shopping_special.jpg" alt="">
+                    </span>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-bg bdr-right">
+                        <a href="">
+                            <img src="images/col02-con.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">智能生活</strong>
+                                    <p class="graphic-small">多用折叠电车</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_13.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-sm bdr-right">
+                        <a href="">
+                            <img src="images/col04-con.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">京东众筹</strong>
+                                    <p class="graphic-small">智能折叠车</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_09.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-sm">
+                        <a href="">
+                            <img src="images/col04-con.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">京东旅行</strong>
+                                    <p class="graphic-small">激发旅行动力</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_11.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-bg bdr-right">
+                        <a href="">
+                            <img src="images/col02-con.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">白条商城</strong>
+                                    <p class="graphic-small">手机减200!</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_14.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-sm bdr-right">
+                        <a href="">
+                            <img src="images/col04-con.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">爱车生活</strong>
+                                    <p class="graphic-small">优惠7900元</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_12.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-sm">
+                        <a href="">
+                            <img src="images/col04-con.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">电影娱乐</strong>
+                                    <p class="graphic-small">1元抢!</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_13.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container">
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">清仓二手</strong>
+                                    <p class="graphic-small">iPhone7直降</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_14.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">大药房</strong>
+                                    <p class="graphic-small">汇仁品牌日</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_15.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">陪伴宝宝</strong>
+                                    <p class="graphic-small">一元秒好货</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_16.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">京东拍卖</strong>
+                                    <p class="graphic-small">精品翡翠抢拍</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_17.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--逛商场-->
+            <div class="floor">
+                <div class="floor-title floor-title-img">
+                    <img src="images/floor-tit.png" alt="" >
+                    <span>
+                        <img src="images/shopping_mall.jpg" alt="">
+                    </span>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-sm bdr-right">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">时尚馆</strong>
+                                    <p class="graphic-small">服饰春尚新</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_15.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col02-sm">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">大家电馆</strong>
+                                    <p class="graphic-small">亿元礼券</p>
+                                </div>
+                                <div class="graphic-img square-img">
+                                    <img src="images/graphic_img_16.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col02-sm bdr-right">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">母婴馆</strong>
+                                    <p class="graphic-small">1元抢不停</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_17.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col02-sm">
+                        <a href="">
+                            <img src="images/05003.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">手机数码</strong>
+                                    <p class="graphic-small">Surface超低价</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_18.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container bdr-bottom">
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">美食城</strong>
+                                    <p class="graphic-small">99元选10件</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_18.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">电脑办公</strong>
+                                    <p class="graphic-small">1999抢i5本</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_19.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">鞋靴箱包</strong>
+                                    <p class="graphic-small">春上新</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_20.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">小家电馆</strong>
+                                    <p class="graphic-small">满300减30</p>
+                                </div>
+                                <div class="graphic-img square-img">
+                                    <img src="images/graphic_img_col04_21.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="floor-container">
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">生鲜馆</strong>
+                                    <p class="graphic-small">新品尝鲜</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_22.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">医药保健</strong>
+                                    <p class="graphic-small">杜蕾斯半价抢</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_23.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg bdr-right">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">图书音像</strong>
+                                    <p class="graphic-small">满300减180</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_24.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="graphic-separation graphic-col04-bg">
+                        <a href="">
+                            <img src="images/05007.png" style="opacity: 0; width: 100%; overflow: hidden;" alt="">
+                            <div class="real-show">
+                                <div class="graphic-text">
+                                    <strong class="graphic-big">中外名酒</strong>
+                                    <p class="graphic-small">浪漫美酒2免1</p>
+                                </div>
+                                <div class="graphic-img">
+                                    <img src="images/graphic_img_col04_25.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--发现好店-->
+            <div class="floor">
+                <div class="floor-title floor-title-img">
+                    <img src="images/floor-tit.png" alt="" >
+                    <span>
+                        <img src="images/find_store.jpg" alt="">
+                    </span>
+                    <span class="more-store">
+                        更多精彩
+                        <i></i>
+                    </span>
+                </div>
+                <div class="floor-container">
+                    <div class="shop-list bdr-right">
+                        <a href="">
+                            <div class="graphic-text">
+                                <strong class="graphic-big">精选</strong>
+                                <p class="graphic-small">20家好店为你精心推荐</p>
+                            </div>
+                            <div class="shop-img">
+                                <img class="opa1" src="images/shop_img_01.jpg" alt="">
+                                <img class="opa1" src="images/shop_img_02.jpg" alt="">
+                                <p class="shop-name">探路者京东自营旗舰店</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="shop-list">
+                        <a href="">
+                            <div class="graphic-text">
+                                <strong class="graphic-big">女装</strong>
+                                <p class="graphic-small">女神教室</p>
+                            </div>
+                            <div class="shop-img">
+                                <img class="opa1" src="images/shop_img_03.jpg" alt="">
+                                <img class="opa1" src="images/shop_img_04.jpg" alt="">
+                                <p class="shop-name">卡蒂弗旗舰店</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--优选清单-->
+            <div class="floor">
+                <div class="floor-title floor-title-img">
+                    <img src="images/floor-tit.png" alt="" >
+                    <span>
+                        <img src="images/excellent_list.jpg" alt="">
+                    </span>
+                    <span class="more-store">
+                        更多精彩
+                        <i></i>
+                    </span>
+                </div>
+                <div class="floor-container">
+                    <div class="shop-list bdr-right">
+                        <a href="">
+                            <div class="graphic-text">
+                                <strong class="graphic-big">手机换代快，性价比和高颜值是新选择</strong>
+                            </div>
+                            <div class="shop-img">
+                                <img class="opa1" src="images/shop_img_05.jpg" alt="">
+                                <img class="opa1" src="images/shop_img_06.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="shop-list">
+                        <a href="">
+                            <div class="graphic-text">
+                                <strong class="graphic-big">周末带孩子出游，平板电脑一扫途中无聊</strong>
+                            </div>
+                            <div class="shop-img">
+                                <img class="opa1" src="images/shop_img_07.jpg" alt="">
+                                <img class="opa1" src="images/shop_img_08.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div style="height: 54px;"></div>
+    </div>
+
+    <!--底部tabbar-->
+    <div class="floor bottom-bar-pannel">
+        <div class="floor-container bdr-top">
+            <ul class="tab5">
+                <li>
+                    <span class="bar-img">
+                        <a href="">
+                            <img src="images/a-home.png" alt="">
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span class="bar-img">
+                        <a href="">
+                            <img src="images/n-catergry.png" alt="">
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span class="bar-img">
+                        <a href="">
+                            <img src="images/n-find.png" alt="">
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span class="bar-img">
+                        <a href="">
+                            <img src="images/n-cart.png" alt="">
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span class="bar-img">
+                        <a href="">
+                            <img src="images/n-me.png" alt="">
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        console.log("京东移动端仿制");
+        console.log("author :  %c许露强(jasonx)","color:brown");
+        console.log("email  :  %cxlq_379033801@163.com","color:red");
+    </script>
+</body>
+</html>

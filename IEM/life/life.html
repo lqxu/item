@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>life</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/life.css">
+    <style>
+        .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jump.js"></script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                //	sectionsColor: ['images/01.png', '#4BBFC3', '#7BAABE', '#f90'],
+                'navigation': true
+            });
+            $(".pg_div").each(function(k,img){
+                new JumpObj(img,40);
+                //第一个参数代表元素对象
+                //第二个参数代表抖动幅度
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+<!--导航栏-->
+<div id="nav">
+    <div class="w">
+        <div class="nav_l l"><img src="images/logo.png" alt=""> </div>
+        <div class="nav_r r">
+            <div><a class="nav_r_a1" href="../register/register.html">注册</a></div>
+            <div class="nav_r_d" style="color: #666666;"> | </div>
+            <div><a class="nav_r_a2" href="#">登录</a></div>
+        </div>
+    </div>
+</div>
+<!--内容部分-->
+<div id="dowebok">
+    <!--/*页面一*/-->
+    <div class="section">
+        <img src="images/01.png" alt="">
+        <div class="section1">
+            <img src="images/life.png" width="260" height="44" alt="">
+            <div class="section1_t">生活不仅是活着，还需要一点仪式感</div>
+            <div class="section1_c">/这种认真的生活态度，是感受幸福的条件/</div>
+            <div class="section1_b">
+                <a href="../register/register.html">成为IME生活家 ></a>
+            </div>
+        </div>
+    </div>
+    <!--/*页面二*/-->
+    <div class="section section2" id="pg2">
+        <div class="w">
+            <div class="l" style="display: inline-block;"> <img src="images/02.png" alt=""> </div>
+            <div class="l pg_div" style="display: inline-block;margin-top: 100px;margin-left: 50px;">
+                <div class="section2_t"></div>
+                <div class="section2_c">研究生活细节 分享美好时光</div>
+                <div class="section2_b">
+                    在这里，你可以记录：<br/>
+                    美食烹饪心得、美妆护肤评测；<br>
+                    影音书观后感、旅行风光游记；<br>
+                    住家收纳经验、手作心得教程；<br>
+                    绘画心路历程、铲屎官人日记.....
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/*页面三*/-->
+    <div class="section section3">
+        <div class="w">
+            <div class="l" style="display: inline-block;margin-left: 100px;margin-top: 120px"> <img src="images/03.png" alt=""> </div>
+            <div class="l pg_div" style="display: inline-block;margin-top: 330px;margin-left: 130px">
+                <div class="section3_t"></div>
+                <div class="section3_c">有更多人读懂你  被IME官方推荐</div>
+                <div class="section3_b">
+                    你可能收获：<br>
+                    糖人们的关注和喜爱；<br>
+                    一群志同道合的朋友；<br>
+                    被推荐至堆糖首页或官方微博微信；<br>
+                    被编辑发掘，成为达人的机会。
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面四-->
+    <div class="section ">
+        <img src="images/04.png" alt="">
+        <div class="section1 section4">
+            <div class="section1_t">“寻找可以在平凡生活里发现不平凡的你们” </div>
+            <div class="section1_c"> ／成为IEM生活家，开启写作功能，记录美好生活／</div>
+            <div class="section1_b">
+                <a href="../register/register.html">成为IME生活家 ></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

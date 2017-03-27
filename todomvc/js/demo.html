@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+var count = function(num){
+	for (var i = 2; i <= num; i++) {
+		if (num % i == 0) {
+			console.log(i);
+
+			count(num / i);
+
+			return;
+		}
+	}
+}
+
+count(24);
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>用户注册</h1>
+    <form action="">
+        <div class="content">
+            <p style="margin-top: 36px;">
+                <span>用户名:</span>
+                <input id="username" type="text" placeholder="请输入用户名" pattern="^[1-9a-z]{8,16}$">
+                <b></b>
+            </p>
+            <p>
+                <span>密 码:</span>
+                <input id="password" type="password" placeholder="请输入密码" pattern="^^[1-9]{6,12}">
+                <b></b>
+            </p>
+            <p>
+                <span>电子邮件:</span>
+                <input id="email" type="text" placeholder="请输入用户名" pattern="^[1-9a-z]{8,16}$">
+                <b></b>
+            </p>
+            <p>
+                <span>年 龄：</span>
+                <input id="age" type="number" placeholder="请输入年龄" required min="18" max="50" step="1">
+                <b></b>
+            </p>
+            <p>
+                <span>出生日期：</span>
+                <input id="date" type="date" required>
+            </p>
+            <div class="reg">立即注册</div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        var user = document.getElementById('username');
+        var password = document.getElementById('password');
+        var email = document.getElementById('email');
+        var age = document.getElementById('age');
+        var da = document.getElementById('date');
+
+        user.onfocus = function(){
+            var b = this.nextElementSibling;
+            b.innerHTML = '请输入8-16位的字母或数字';
+            b.style.color = '#97B670';
+        };
+        user.onblur = function() {
+            var b = this.nextElementSibling;
+            if(this.value.length == 0){
+                b.innerHTML = '电子邮件不能为空';
+                b.style.color = 'pink';
+            }else if(this.value.length < 8 || this.value.length  > 16){
+                b.innerHTML = '电子邮件输入格式错误';
+                b.style.color = 'pink';
+            }else {
+                b.innerHTML = '电子邮件输入正确';
+            }
+        };
+
+        password.onfocus = function(){
+            var b = this.nextElementSibling;
+            b.innerHTML = '请输入6-12位的字母或数字';
+            b.style.color = '#97B670';
+        };
+        password.onblur = function() {
+            var b = this.nextElementSibling;
+            if(this.value.length == 0){
+                b.innerHTML = '密码不能为空';
+                b.style.color = 'pink';
+            }else if(this.value.length < 8 || this.value.length  > 16){
+                b.innerHTML = '密码输入格式错误';
+                b.style.color = 'pink';
+            }else {
+                b.innerHTML = '密码输入正确';
+            }
+        };
+
+        email.onfocus = function(){
+            var b = this.nextElementSibling;
+            b.innerHTML = '请输入8-16位的字母或数字';
+            b.style.color = '#97B670';
+        };
+        email.onblur = function() {
+            var b = this.nextElementSibling;
+            if(this.value.length == 0){
+                b.innerHTML = '电子邮件不能为空';
+                b.style.color = 'pink';
+            }else if(this.value.length < 8 || this.value.length  > 16){
+                b.innerHTML = '电子邮件输入格式错误';
+                b.style.color = 'pink';
+            }else {
+                b.innerHTML = '电子邮件输入正确';
+            }
+        };
+
+        age.onfocus = function(){
+            var b = this.nextElementSibling;
+            b.innerHTML = '请输入8-16位的字母或数字';
+            b.style.color = '#97B670';
+        };
+        age.onblur = function() {
+            var b = this.nextElementSibling;
+            if(this.value.length == 0){
+                b.innerHTML = '用户名不能为空';
+                b.style.color = 'pink';
+            }else if(this.value< 18){
+                console.log(this.value);
+                b.innerHTML = '年龄不能小于18';
+                b.style.color = 'pink';
+            }else if(this.value > 50){
+                b.innerHTML = '年龄不能大于50';
+                b.style.color = 'pink';
+            }else {
+                b.innerHTML = '用户名输入正确';
+            }
+        };
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
