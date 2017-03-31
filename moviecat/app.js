@@ -23,7 +23,7 @@
 	});
 
 	//给当前模块绑定一个控制器
-	module.controller('searchCtrl', ['$scope', '$route', '$location', function($scope, $route, $location) {
+	module.controller('searchCtrl', ['$scope', '$route', '$location','$routeParams', function($scope, $route, $location,$routeParams) {
 		$scope.input = '';
 		$scope.query = function() {
 			if ($routeParams.status) {
