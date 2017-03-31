@@ -4,7 +4,7 @@
 
 	module.config(['$routeProvider', function($routeProvider) {
 		$routeProvider.when('/subject/:id', {
-			templateUrl: '/moviecat/movie_detail/view.html',
+			templateUrl: '/item/moviecat/movie_detail/view.html',
 			controller: 'movieDetailCtrl'
 		});
 	}]);

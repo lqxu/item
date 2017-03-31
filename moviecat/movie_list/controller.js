@@ -7,7 +7,7 @@
 	//模块配置自身当前路由
 	module.config(['$routeProvider', function($routeProvider) {
 		$routeProvider.when('/:status/:page', {
-			templateUrl: '/moviecat/movie_list/view.html',
+			templateUrl: '/item/moviecat/movie_list/view.html',
 			controller: 'movieListCtrl'
 		});
 	}]);
