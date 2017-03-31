@@ -26,10 +26,17 @@
 	module.controller('searchCtrl', ['$scope', '$route', function($scope, $route) {
 		$scope.input = '';
 		$scope.query = function() {
-			$route.updateParams({
-				status: 'search',
-				q: $scope.input
-			});
-		}
+				if ($routeParams.status) {
+					//如果是在列表页面
+					$route.updateParams({
+						status: 'search',
+						q: $scope.input
+					});
+				}else{
+					//如果是在详情页面，则需要手动更改所有的hash值
+					$location.url('search/1?q='+$scope.input);
+				}
+
+			}
 	}]);
 })(angular)
