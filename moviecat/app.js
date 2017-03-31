@@ -18,8 +18,8 @@
 	//给模块绑定全局常量
 	module.constant('appConfig', {
 		count: 5,
-		listBaseUrl: '//api.douban.com/v2/movie/',
-		detailBaseUrl: '//api.douban.com/v2/movie/subject/'
+		listBaseUrl: 'https://api.douban.com/v2/movie/',
+		detailBaseUrl: 'https://api.douban.com/v2/movie/subject/'
 	});
 
 	//给当前模块绑定一个控制器
