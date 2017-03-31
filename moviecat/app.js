@@ -23,20 +23,20 @@
 	});
 
 	//给当前模块绑定一个控制器
-	module.controller('searchCtrl', ['$scope', '$route', function($scope, $route) {
+	module.controller('searchCtrl', ['$scope', '$route', '$location', function($scope, $route, $location) {
 		$scope.input = '';
 		$scope.query = function() {
-				if ($routeParams.status) {
-					//如果是在列表页面
-					$route.updateParams({
-						status: 'search',
-						q: $scope.input
-					});
-				}else{
-					//如果是在详情页面，则需要手动更改所有的hash值
-					$location.url('search/1?q='+$scope.input);
-				}
-
+			if ($routeParams.status) {
+				//如果是在列表页面
+				$route.updateParams({
+					status: 'search',
+					q: $scope.input
+				});
+			} else {
+				//如果是在详情页面，则需要手动更改所有的hash值
+				$location.url('search/1?q=' + $scope.input);
 			}
+
+		}
 	}]);
 })(angular)
