@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="jasonx">
-    <title>豆瓣电影</title>
+    <title>爱上电影</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="app.css">
 </head>
@@ -22,6 +22,7 @@
             <div id="navbar" class="navbar-collapse collapse" ng-controller="searchCtrl">
                 <form class="navbar-form navbar-right" ng-submit="query()">
                     <input type="text" class="form-control" ng-model="input" placeholder="Search...">
+                    <button type="submit" style="outline: none" class="btn btn-default" ng-click="query()">搜索</button>
                 </form>
             </div>
         </div>
