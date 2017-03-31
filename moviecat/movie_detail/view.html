@@ -1,0 +1,13 @@
+<div class="jumbotron" style="overflow: hidden;">
+  <h1>{{movie.title}}</h1>
+  <div class="pull-right"><img ng-src="{{movie.images.large}}"></div>
+  <p>{{summary}}</p>
+  <p><a class="btn btn-primary btn-lg" href="{{movie.alt}}" target="_blank" role="button">了解更多</a></p>
+</div>
+
+<div id="cover" ng-show="loading">
+<div class="spinner">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
+</div>
+</div>

@@ -1,0 +1,48 @@
+<h1 class="page-header">{{title}}</h1>
+<div class="list-group">
+    <a href="#/subject/{{subject.id}}" class="list-group-item" ng-repeat="subject in subjects">
+        <span class="badge">{{subject['rating']['average']}}</span>
+        <div class="media" style="margin-top: 0">
+            <div class="media-left">
+                <img class="media-object" ng-src="{{subject.images.medium}}">
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">{{subject['title']}}
+                </h3>
+                <p>上映年份:
+                    <span>{{subject['year']}}</span>
+                </p>
+                <p>类型:
+                    <span>{{subject['genres'].join('、')}}</span>
+                </p>
+                <p>导演:
+                    <span ng-repeat="director in subject['directors']">
+                {{director['name'] + ($last ? '' : '、')}}
+                </span>
+                </p>
+                <div>主演:
+                    <span ng-repeat="cast in subject['casts']">
+                {{cast['name'] + ($last ? '' : '、')}}
+                </span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div ng-show="!loading">
+    <p ng-show="!loading">总共：{{total}}条记录，第{{page}}/{{totalPage}}页</p>
+    <br>
+    <br>
+    <nav>
+        <ul class="pager">
+            <li ng-class="{disabled:page<=1}"><a ng-click="go(page - 1)">&#8810; 上一页</a></li>
+            <li ng-class="{disabled:page>=totalPage}"><a ng-click="go(page + 1)">下一页 &#8811;</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="cover" ng-show="loading">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
