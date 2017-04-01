@@ -35,7 +35,6 @@
 				console.log('请求出错，错误代码 '+response.status+'，错误信息 '+response.statusText);
 			})
 			*/
-			console.log(appConfig);
 			var count = appConfig.count;
 			var page = parseInt($routeParams['page']);
 			var startIndex = (page - 1) * count;

@@ -1,0 +1,130 @@
+/*全局样式*/
+body{
+    background-color: #eeeeee;
+}
+
+
+/*首页元素样式自定义*/
+#tab1-h2{
+    padding: 25px 0 15px 0;
+}
+
+#tab1-p{
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+#tab1 .media{
+    padding: 20px;
+}
+
+#tab1 .media .media-body h4{
+    padding-bottom: 10px;
+}
+
+/*资讯页面*/
+.info-tab1{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px lightgray;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+.info-right-tab1{
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.info-right{
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+/*案例*/
+.case-tab1{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+/*关于*/
+#about {
+    margin-bottom: 50px;
+}
+#about p{
+    line-height: 2;
+    font-size: 16px;
+}
+
+
+
+/*Bootstrap 无法完成的响应式布局,需要手动利用媒体查询来操作*/
+/*小于768px的屏幕*/
+@media screen and (max-width: 768px) {
+    #tab1-h2{
+        font-size: 20px;
+    }
+    #tab1-p{
+        font-size: 12px;
+    }
+    #aboutDiv h3{
+        font-size: 18px;
+    }
+
+    #aboutDiv p{
+        font-size: 12px;
+    }
+}
+
+/*768~992px之间的屏幕*/
+@media screen and (min-width: 768px) {
+    #tab1-h2{
+        font-size: 22px;
+    }
+    #tab1-p{
+        font-size: 14px;
+    }
+    #aboutDiv h3{
+        font-size: 19px;
+    }
+
+    #aboutDiv p{
+        font-size: 14px;
+    }
+
+}
+
+/*992~1200px之间的屏幕*/
+@media screen and (min-width: 992px) {
+    #tab1-h2{
+        font-size: 26px;
+    }
+    #tab1-p{
+        font-size: 18px;
+    }
+    #aboutDiv h3{
+        font-size: 20px;
+    }
+
+    #aboutDiv p{
+        font-size: 15px;
+    }
+}
+
+/*大于1200px的屏幕*/
+@media screen and (min-width: 1200px) {
+    #tab1-h2{
+        font-size: 32px;
+    }
+    #tab1-p{
+        font-size: 24px;
+    }
+    #aboutDiv h3{
+        font-size: 22px;
+    }
+
+    #aboutDiv p{
+        font-size: 16px;
+    }
+}
+
+

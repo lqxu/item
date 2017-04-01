@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="jasonx">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>关于</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+
+    <style>
+        a[href='04-about.html']{
+            color: #555;
+            background-color: #e7e7e7;
+        }
+        a[href='04-about.html']:hover{
+            background-color: #e7e7e7;
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--导航条-->
+<div class="bs-example bs-navbar-top-example">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="padding-top: 0">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                    <li><a href="info.html"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+                    <li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+                    <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div><!-- /example -->
+
+<!--巨幕-->
+<div class="jumbotron" style="background-image: url('img/bg.jpg');">
+    <div class="container">
+        <hgroup style="color: white;padding: 30px 0 10px 10px">
+            <!--标题组-->
+            <h2>案例</h2>
+            <h4>和各大明星企业有着紧密合作...</h4>
+        </hgroup>
+    </div>
+</div>
+
+
+<div class="container" id="about">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 hidden-xs">
+            <div class="row">
+                <ul class="nav nav-pills nav-stacked" >
+                    <li class="active"><a href="#p1">1.机构介绍</a></li>
+                    <li><a href="#p2">2.加入我们</a></li>
+                    <li><a href="#p3">3.联系方式</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-9 col-sm-12" style="background-color: #fff;">
+            <!--data-spy="scroll" 属性设置滚动监听
+            01 默认滚动监听,监听的文本滚动位置是整体的最上面边缘
+            02 如果要修改默认监听位置,可以给文本的父元素添加 position:relative; 属性
+            03 实例:横向监听(导航栏和文本水平排列)可以不加position:relative;  纵向监听(导航栏和文本堆叠排列)必须加position:relative;
+            -->
+            <div style=" height: 300px;overflow-y: scroll;" id="aboutDiv" data-spy="scroll">
+                <h3 id="p1" class="page-header">机构介绍</h3>
+                <p>无限互联企业培训有限公司是一家专业以智能化弱电工程为主的高科技民营企业，公司自创立以来一直专业致力于智能化弱电工程；始终坚持发扬"诚信、创新、沟通"为企业宗旨，以"技术、服务"为立业之本的团体精神，并形成一套完整的设计、安装、调试、培训、维护一站式服务体系。 </p>
+                <h3 id="p2" class="page-header">加入我们</h3>
+                <p>网络已深刻改变着人们的生活，本地化生活服务市场前景巨大，生活半径团队坚信本地化生活服务与互联网的结合将会成就一家梦幻的公司，我们脚踏实地的相信梦想，我们相信你的加入会让生活半径更可能成为那家梦幻公司！生活半径人有梦想，有魄力，强执行力，但是要实现这个伟大的梦想，需要更多的有创业精神的你一路前行。公司将提供有竞争力的薪酬、完善的福利（五险一金）、期权、广阔的上升空间。只要你有能力、有激情、有梦想，愿意付出，愿意与公司共同成长，请加入我们！ </p>
+                <p>请发送您的简历到：hr@xxx.com，我们会在第一时间联系您！</p>
+                <h3 id="p3" class="page-header">联系方式</h3>
+                <address>
+                    <p>地址：北京石景山古城西路首特钢大厦3楼</p>
+                    <p>邮编：1234567</p>
+                    <p>电话：010-88888888</p>
+                    <p>传真：010-88666666</p>
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="label-info text-center " style="margin: 0; padding: 20px 0;color: white" >
+    <p>企业培训 | 合作事宜 | 版权投诉</p>
+    <p>ICP 备12345678. © 2009-2016 无限互联. Powered by Bootstrap.</p>
+</footer>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="dist/js/jquery-3.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>
